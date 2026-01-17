@@ -54,15 +54,3 @@ Firewall rules allow only required services (HTTP/HTTPS)
 Infrastructure is reproducible using a single Vagrantfile
 
 
-🧠 What I Learned
-
-Provisioning multi-VM environments using Vagrant
-
-Handling OS-specific firewall configurations
-
-Automating web server and database setup
-
-Debugging provisioning issues related to services and shell scripting
-
-Applying Infrastructure as Code (IaC) principles
-
