@@ -1,0 +1,10 @@
+permission problem troubleshooting
+
+to check the permission: ll or ls -ltr jaha chai permission dekauxa ra ekaichoti sabai file ko ra if you are inside the /var/www/html/ ani sabai ko permission herna man xa vane use this command: "namei -l /var/www/html/index.html" sab ko ekai choti dekauxa. 
+
+and for permission sabai directory sanga x wala sign hunu parxa and if not then use this command: being root "chown -R apache:apache /var/www/html/index.html"
+
+arko chai : "chmod -R 755 /var/www/html/index.html"
+
+
+sudo -u www-data sed -i 's/password_here/admin123/' /srv/www/wordpress/wp-config.php

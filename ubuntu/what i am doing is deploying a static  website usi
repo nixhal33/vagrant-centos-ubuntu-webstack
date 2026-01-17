@@ -1,0 +1,21 @@
+what i am doing is deploying a static  website using two services using two different vm where i am using 1 vm centos9s for httpd services and ubuntu for hosting the services and centos also used for the database hosting the website.
+
+what i did first is configure the centos9s website where i am using it as a website hosting services as i have given it a private ip address, extra ram etc.
+
+after that i am updating and upgrading the entire vm so any deprecated services or app will not disturb our process.
+
+after this, i am downloading the services needed to run website ie: yum install httpd wget unzip -y
+
+after downloading it i copied this file to the tmp directory btw i am still root and all the things going here is being as a root user
+
+i unziped it from tmp folder to /var/www/html folder using: "unzip filename.zip -d /var/www/html"
+
+and then i used the vm ip whichi i can find using ifconfig | grep inet and the first one is the ip which i had set privately and that thing will be hovered over the website now.
+
+
+part 2: 
+Now i am gonna finally deploy a static website where i can even put some database inside of it and the thing is that i am gonna document each and every thing down.
+
+so what i am gonna do is install the ubuntu box ie: vagrant init box ubuntu/bionic64
+
+and after that i am gonna setup the wordpress on ubuntu
